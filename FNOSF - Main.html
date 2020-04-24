@@ -12,21 +12,44 @@
        
         <header>
 
-            <h1 style="font-size:50px; text-align: center">FRESHSPAWN NIGHT-OUT SUCCESS FORECAST</h1>
+            <h1 style="color:white; font-weight:400; font-stretch:ultra-condensed; font-size:50px; margin-left: 200px; white-space:nowrap">FRESHSPAWN NIGHT-OUT SUCCESS FORECAST</h1>
             <br/>
             <p> <b></b></p>
 
+
+            <!--font-family
+            :"Source Sans Pro",Helvetica,Roboto,Arial,sans-serif;
+            color
+            :#989898;
+            font-weight
+            :400;/!-->
+
             <style> 
+                #matrixvideo {
+                    position: fixed;
+                    right: 0;
+                    bottom: 0;
+                    min-width: 100%; 
+                    min-height: 100%;
+                    z-index: -4;
+                }  
                 .wholedoc {
                     width:1000px;
-                    
+                    z-index: 1;
+
+                 
 
                 }
                 .intro {
                   width: 900px;
                   height: 300px;
                   border: 1px solid black;
-                  display: flex
+                  display: flex;
+                  margin-left: 300px;
+                  text-align: justify;
+                  text-justify: inter-word;
+                  font-family:inherit;
+                  font-stretch:ultra-condensed;
                 }
                 
 
@@ -35,21 +58,35 @@
                   flex: 1;
                 }
                 
-                .div.container {
-                    width:90%;
-                    margin:1%;
-                }
-
+               
                 .freshspawns {
                     text-align: center;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width:100px;
+                    margin-left: 140px;   
                 }
+                .circular--square {
+                    border-radius: 50%;
+                }
+                .companions {
+                    text-align: center;
+                    margin-left: 140px;   
+                }
+                
+               
+                .companions { 
+                    border-collapse:separate; 
+                    border-spacing:0 15px;
+                }
+                .bots {
+                    text-align: center;
+                    margin-left: 595px; 
+                }
+
                 </style>
                 
         </header>
-
+            <video id="matrixvideo" autoplay muted loop >
+                <source src="Images/matrix.mp4" type="video/mp4">
+            </video>
         <main class="wholedoc">
             <article>
                 
@@ -57,90 +94,90 @@
 
                     <div class="intro">
                         
-                        <div style="background-color:lightblue; padding: 20px 20px 20px 20px">
+                        <div style="background-color:#34363f; color:white; padding: 20px 20px 20px 20px">
                             Whilst we can assert with a reasonable degree of confidence that:
                             <br><br>
                             <em><b>Cav + Freshspawns + drinking = fun</b></em>
                             <br><br>
-                            Volatire tells us that absolute certainty is an absurd proposition. 
+                            Voltaire mused that absolute certainty was an absurd proposition. 
                             To mitigate the likelihood of an underwhelming gathering, the predictive 
-                            powers of this logarithm will enable the user to forsee possible 
-                            scenarios and eventualities prior to a night-out. 
+                            powers of this logarithm will enable the user to forsee all possible 
+                            eventualities prior to a night-out. 
                             <br><br>
-                            The premise is that the well established Freshspawns have embarked
+                            In this scenario, the well established Freshspawns have embarked
                             on a day trip to the Cavendish bar in West Street, Sheffield. After 
-                            multiple jars, an opportunity to introduce a number of <i>unknowns</i> 
+                            multiple jars, an opportunity to introduce a series of familiar <i>companions</i> 
                             presents itself.</div>  
                         <div><img style="float: right;" height="300px" src="Images/the-cavendish.jpg" alt="The Cavendish entrance"></div>
-
+                    </div>
                     
-               
-
                 </section>
                 <br><br><br><br>
 
-                <div class="container">
+                
                     <table class="freshspawns">
                         
                         <thead>
                         <tr>
-                            <th colspan="4"><h3>Freshspawns</h3></th>
+                            <th colspan="4"><h3 style="font-size: 40px;color:white">FRESHSPAWNS</h3></th>
                         </tr>
                         </thead>  
                         
                         <tbody>
                     
                         <tr>
-                            <td><img width="300" height="260" src="Images/Heaton.PNG" alt="Jonny"><br/><p align="center"></p>Jonny Heaton</p></a></td>
-                            <td><img width="300" height="260" src="Images/Cartsy.PNG" alt="Luke"><br/><p align="center">Luke Carter</p></a></td>
-                            <td><img width="300" height="260" src="Images/Swarley.PNG" alt="Michael"><br/><p align="center">Michael Graham</p></a></td>
-                            <td><img width="300" height="260" src="Images/Ske.PNG" alt="Will"><br/><p align="center">William Keogh</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Heaton.PNG" alt="Jonny"><br/><p align="center" style="color:white">Jonny Heaton</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Luke.png" alt="Luke"><br/><p align="center" style="color:white">Luke Carter</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Swarley.PNG" alt="Michael"><br/><p align="center" style="color:white">Michael Graham</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Ske.PNG" alt="Will"><br/><p align="center" style="color:white">William Keogh</p></a></td>
                         </tr>
                         </tbody>
                     </table>
-                    <br><br>
+                    <br><br><br>
                     <table class="companions">
                         
                         <thead>
                         <tr>
-                            <th colspan="4"><h3>Companions</h3></th>
+                            <th colspan="4"><h3 style="font-size: 40px;color:white">COMPANIONS</h3></th>
                         </tr>
                         </thead>  
                         
                         <tbody>
                     
                         <tr>
-                            <td><img width="300" height="260" src="Images/Moorsey.jpg" alt="Andy"><br/><p align="center">Andrew Moore</p></a></td>
-                            <td><img width="300" height="260" src="Images/Wilson.jpg" alt="Richard"><br/><p align="center">Richard Wilson</p></a></td>
-                            <td><img width="300" height="260" src="Images/Jimmy.jpg" alt="James"><br/><p align="center">James Wass</p></a></td>
-                            <td><img width="300" height="260" src="Images/Wes 2.jpg" alt="Wes"><br/><p align="center">Andrew Towler</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Moorsey.jpg" alt="Andy"><br/><p align="center" style="color:white">Andrew Moore</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Wilson.jpg" alt="Richard"><br/><p align="center" style="color:white">Richard Wilson</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Jimmy.jpg" alt="James"><br/><p align="center" style="color:white">James Wass</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Wes 2.jpg" alt="Wes"><br/><p align="center" style="color:white">Andrew Towler</p></a></td>
                         </tr>
-                        
+                        </tbody>
+                        <br>
+                        <tbody>
                         <tr>
-                            <td><img width="300" height="260" src="Images/Fin.png" alt="Finley"><br/><p align="center">Finley Thompson</p></a></td>
-                            <td><img width="300" height="260" src="Images/Elliot.jpg" alt="Elliot"><br/><p align="center">Elliot Saunders</p></a></td>
-                            <td><img width="300" height="260" src="Images/Alex.png" alt="Alex"><br/><p align="center">Alex Oyston</p></a></td>
-                            <td><img width="300" height="260" src="Images/Tom.png" alt="Tom"><br/><p align="center">Tom</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Fin.png" alt="Finley"><br/><p align="center" style="color:white">Finley Thompson</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Elliot.jpg" alt="Elliot"><br/><p align="center" style="color:white">Elliot Saunders</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Alex.png" alt="Alex"><br/><p align="center" style="color:white">Alex Oyston</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Tom.png" alt="Tom"><br/><p align="center" style="color:white">Tom</p></a></td>
                         </tr>
                         </tbody>
                     </table>
-                    <br><br>
+                    <br><br><br><br>
                     <table class="bots">
                         
                         <thead>
                         <tr>
-                            <th colspan="1"><h3>Bots</h3></th>
+                            <th colspan="1"><h3 style="font-size: 40px;color:white">BOTS</h3></th>
                         </tr>
                         </thead>  
                         
                         <tbody>
                     
                         <tr>
-                            <td><img width="300" height="260" src="Images/candamir.jpg" alt="Candamir"><br/><p align="center">Candamir</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/candamir.jpg" alt="Candamir"><br/><p align="center" style="color:white">Candamir</p></a></td>
                         </tr>
                         </tbody>
                     </table>
-                </div>
+               
             </article>
         </main>
         <footer>
