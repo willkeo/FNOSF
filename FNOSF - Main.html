@@ -12,7 +12,7 @@
        
         <header>
 
-            <h1 style="color:white; font-weight:400; font-stretch:ultra-condensed; font-size:50px; margin-left: 200px; white-space:nowrap">FRESHSPAWN NIGHT-OUT SUCCESS FORECAST</h1>
+            <h1 style="color:white; font-weight:400; font-family:impact; font-size:60px; margin-left: 225px; white-space:nowrap">FRESHSPAWN NIGHT-OUT SUCCESS FORECAST</h1>
             <br/>
             <p> <b></b></p>
 
@@ -31,21 +31,21 @@
                     bottom: 0;
                     min-width: 100%; 
                     min-height: 100%;
-                    z-index: -4;
+                    z-index: -1;
                 }  
                 .wholedoc {
                     width:1000px;
-                    z-index: 1;
+                   
 
                  
 
                 }
                 .intro {
-                  width: 900px;
-                  height: 300px;
+                  width: 960px;
+                  height: 330px;
                   border: 1px solid black;
                   display: flex;
-                  margin-left: 300px;
+                  margin-left: 270px;
                   text-align: justify;
                   text-justify: inter-word;
                   font-family:inherit;
@@ -57,15 +57,44 @@
                   -ms-flex: 1;  
                   flex: 1;
                 }
-                
-               
+
+                .tooltip {
+                    position: relative;
+                    display: inline-block;
+                    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+                    }
+
+                    /* Tooltip text */
+                .tooltip .tooltiptext {
+                    visibility: hidden;
+                    width: 120px;
+                    bottom: 80%;
+                    left: 20%; 
+                    margin-left: -60px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: left;
+                    padding: 5px 0;
+                    border-radius: 6px;
+                    
+                    /* Position the tooltip text - see examples below! */
+                    position: absolute;
+                    z-index: 1;
+                    }
+
+                    /* Show the tooltip text when you mouse over the tooltip container */
+                .tooltip:hover .tooltiptext {
+                    visibility: visible;
+                    }
                 .freshspawns {
                     text-align: center;
                     margin-left: 140px;   
                 }
+
                 .circular--square {
                     border-radius: 50%;
                 }
+
                 .companions {
                     text-align: center;
                     margin-left: 140px;   
@@ -94,7 +123,7 @@
 
                     <div class="intro">
                         
-                        <div style="background-color:#34363f; color:white; padding: 20px 20px 20px 20px">
+                        <div style="background-color:#34363f; font-family:impact; color:white; padding: 28px 20px 20px 20px">
                             Whilst we can assert with a reasonable degree of confidence that:
                             <br><br>
                             <em><b>Cav + Freshspawns + drinking = fun</b></em>
@@ -108,7 +137,7 @@
                             on a day trip to the Cavendish bar in West Street, Sheffield. After 
                             multiple jars, an opportunity to introduce a series of familiar <i>companions</i> 
                             presents itself.</div>  
-                        <div><img style="float: right;" height="300px" src="Images/the-cavendish.jpg" alt="The Cavendish entrance"></div>
+                        <div><img style="float: right;" height="330px" src="Images/the-cavendish.jpg" alt="The Cavendish entrance"></div>
                     </div>
                     
                 </section>
@@ -119,17 +148,25 @@
                         
                         <thead>
                         <tr>
-                            <th colspan="4"><h3 style="font-size: 40px;color:white">FRESHSPAWNS</h3></th>
+                            <th colspan="4"><h3 style="font-size: 40px;font-family:impact; color:white">FRESHSPAWNS</h3></th>
                         </tr>
                         </thead>  
                         
                         <tbody>
                     
                         <tr>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Heaton.PNG" alt="Jonny"><br/><p align="center" style="color:white">Jonny Heaton</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Luke.png" alt="Luke"><br/><p align="center" style="color:white">Luke Carter</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Swarley.PNG" alt="Michael"><br/><p align="center" style="color:white">Michael Graham</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Ske.PNG" alt="Will"><br/><p align="center" style="color:white">William Keogh</p></a></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Heaton.PNG" alt="Jonny">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:5<br>Flexibility:8<br>Reliability:10<br>Durability:10</span></div>
+                                <br/><p align="center" style="color:white">JONNY HEATON</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Luke.png" alt="Luke">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:7<br>Sociability:9<br>Flexibility:10<br>Reliability:10<br>Durability:8</span></div>
+                                <br/><p align="center" style="color:white">LUKE CARTER</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Swarley.PNG" alt="Michael">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:9<br>Flexibility:7<br>Reliability:7<br>Durability:4</span></div>
+                                <br/><p align="center" style="color:white">MICHAEL GRAHAM</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Ske.PNG" alt="Will">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:7<br>Flexibility:8<br>Reliability:5<br>Durability:9</span></div>
+                                <br/><p align="center" style="color:white">WILLIAM KEOGH</p></td>
                         </tr>
                         </tbody>
                     </table>
@@ -138,26 +175,26 @@
                         
                         <thead>
                         <tr>
-                            <th colspan="4"><h3 style="font-size: 40px;color:white">COMPANIONS</h3></th>
+                            <th colspan="4"><h3 style="font-size: 40px; font-family:impact; color:white">COMPANIONS</h3></th>
                         </tr>
                         </thead>  
                         
                         <tbody>
                     
                         <tr>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Moorsey.jpg" alt="Andy"><br/><p align="center" style="color:white">Andrew Moore</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Wilson.jpg" alt="Richard"><br/><p align="center" style="color:white">Richard Wilson</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Jimmy.jpg" alt="James"><br/><p align="center" style="color:white">James Wass</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Wes 2.jpg" alt="Wes"><br/><p align="center" style="color:white">Andrew Towler</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Moorsey.jpg" alt="Andy"><br/><p align="center" style="color:white">ANDREW MOORE</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Wilson.jpg" alt="Richard"><br/><p align="center" style="color:white">RICHARD WILSON</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Jimmy.jpg" alt="James"><br/><p align="center" style="color:white">JAMES WASS</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Wes 2.jpg" alt="Wes"><br/><p align="center" style="color:white">ANDREW TOWLER</p></a></td>
                         </tr>
                         </tbody>
                         <br>
                         <tbody>
                         <tr>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Fin.png" alt="Finley"><br/><p align="center" style="color:white">Finley Thompson</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Elliot.jpg" alt="Elliot"><br/><p align="center" style="color:white">Elliot Saunders</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Alex.png" alt="Alex"><br/><p align="center" style="color:white">Alex Oyston</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Tom.png" alt="Tom"><br/><p align="center" style="color:white">Tom</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Fin.png" alt="Finley"><br/><p align="center" style="color:white">FINLEY THOMPSON</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Elliot.jpg" alt="Elliot"><br/><p align="center" style="color:white">ELLIOT SAUNDERS</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Alex.png" alt="Alex"><br/><p align="center" style="color:white">ALEX OYSTON</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/Tom.png" alt="Tom"><br/><p align="center" style="color:white">TOM</p></a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -166,14 +203,14 @@
                         
                         <thead>
                         <tr>
-                            <th colspan="1"><h3 style="font-size: 40px;color:white">BOTS</h3></th>
+                            <th colspan="1"><h3 style="font-size: 40px;font-family:impact; color:white">BOTS</h3></th>
                         </tr>
                         </thead>  
                         
                         <tbody>
                     
                         <tr>
-                            <td><img class="circular--square" width="300" height="260" src="Images/candamir.jpg" alt="Candamir"><br/><p align="center" style="color:white">Candamir</p></a></td>
+                            <td><img class="circular--square" width="300" height="260" src="Images/candamir.jpg" alt="Candamir"><br/><p align="center" style="color:white">CANDAMIR</p></a></td>
                         </tr>
                         </tbody>
                     </table>
