@@ -48,8 +48,7 @@
                   margin-left: 270px;
                   text-align: justify;
                   text-justify: inter-word;
-                  font-family:inherit;
-                  font-stretch:ultra-condensed;
+                  
                 }
                 
 
@@ -61,7 +60,7 @@
                 .tooltip {
                     position: relative;
                     display: inline-block;
-                    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+                    border-bottom: 0px dotted #34363f; /* If you want dots under the hoverable text */
                     }
 
                     /* Tooltip text */
@@ -71,11 +70,12 @@
                     bottom: 80%;
                     left: 20%; 
                     margin-left: -60px;
-                    background-color: black;
+                    background-color: #34363f;
                     color: #fff;
                     text-align: left;
-                    padding: 5px 0;
+                    padding: 5px 5px 5px 5px;
                     border-radius: 6px;
+                    font-family:impact;
                     
                     /* Position the tooltip text - see examples below! */
                     position: absolute;
@@ -86,6 +86,31 @@
                 .tooltip:hover .tooltiptext {
                     visibility: visible;
                     }
+
+                .tooltip .tooltipbio {
+                    visibility: hidden;
+                    width: 260px;
+                    top: 120%;
+                    left: 50%; 
+                    margin-left: -130px;
+                    background-color: #34363f;
+                    color: #fff;
+                    text-align: left;
+                    padding: 5px 5px 5px 5px;
+                    border-radius: 6px;
+                    font-family:impact;
+                    text-align: justify;
+
+                    /* Position the tooltip text - see examples below! */
+                    position: absolute;
+                    z-index: 1;
+                    }
+
+                    /* Show the tooltip text when you mouse over the tooltip container */
+                .tooltip:hover .tooltipbio {
+                    visibility: visible;
+                    }
+
                 .freshspawns {
                     text-align: center;
                     margin-left: 140px;   
@@ -126,7 +151,7 @@
                         <div style="background-color:#34363f; font-family:impact; color:white; padding: 28px 20px 20px 20px">
                             Whilst we can assert with a reasonable degree of confidence that:
                             <br><br>
-                            <em><b>Cav + Freshspawns + drinking = fun</b></em>
+                            <b>Cav + Freshspawns + drinking = FUN</b>
                             <br><br>
                             Voltaire mused that absolute certainty was an absurd proposition. 
                             To mitigate the likelihood of an underwhelming gathering, the predictive 
@@ -135,7 +160,7 @@
                             <br><br>
                             In this scenario, the well established Freshspawns have embarked
                             on a day trip to the Cavendish bar in West Street, Sheffield. After 
-                            multiple jars, an opportunity to introduce a series of familiar <i>companions</i> 
+                            multiple jars, an opportunity to introduce a series of familiar <i>companions </i> 
                             presents itself.</div>  
                         <div><img style="float: right;" height="330px" src="Images/the-cavendish.jpg" alt="The Cavendish entrance"></div>
                     </div>
@@ -156,17 +181,21 @@
                     
                         <tr>
                             <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Heaton.PNG" alt="Jonny">
-                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:5<br>Flexibility:8<br>Reliability:10<br>Durability:10</span></div>
-                                <br/><p align="center" style="color:white">JONNY HEATON</p></td>
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:5<br>Flexibility:8<br>Reliability:10<br>Durability:10</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny Heaton has established himself as a stalwart of the Sheffield bar scene due to his impeccable reliabilty and durability. Though particularly wary of loud-mouthed newcomers, he always has room for another peon under his considerable wing</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">JONNY HEATON</p></td>
                             <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Luke.png" alt="Luke">
-                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:7<br>Sociability:9<br>Flexibility:10<br>Reliability:10<br>Durability:8</span></div>
-                                <br/><p align="center" style="color:white">LUKE CARTER</p></td>
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:7<br>Sociability:9<br>Flexibility:10<br>Reliability:10<br>Durability:8</span>
+                                <span class="tooltipbio">If the chatability of this freshspawn can sometimes suddenly and inexplicably falter, Luke Carter's sheer dexterity and unparalelled cadence more than makes up for it. Whilst rumours of him appearing in two places at once on a night out have been circulated, they have never been confirmed</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">LUKE CARTER</p></td>
                             <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Swarley.PNG" alt="Michael">
-                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:9<br>Flexibility:7<br>Reliability:7<br>Durability:4</span></div>
-                                <br/><p align="center" style="color:white">MICHAEL GRAHAM</p></td>
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:9<br>Flexibility:7<br>Reliability:7<br>Durability:4</span>
+                                <span class="tooltipbio">A freshspawn for any occasion, Michael Graham's unique blend of sociability and chatability is sure to breathe life into even the dryest of functions. The brightest stars exhaust their available hydrogen the quickest though, so don't be surprised if he goes supernova, leaving nothing but a black hole where he once stood</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">MICHAEL GRAHAM</p></td>
                             <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Ske.PNG" alt="Will">
-                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:7<br>Flexibility:8<br>Reliability:5<br>Durability:9</span></div>
-                                <br/><p align="center" style="color:white">WILLIAM KEOGH</p></td>
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:7<br>Flexibility:8<br>Reliability:5<br>Durability:9</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">WILLIAM KEOGH</p></td>
                         </tr>
                         </tbody>
                     </table>
@@ -182,19 +211,43 @@
                         <tbody>
                     
                         <tr>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Moorsey.jpg" alt="Andy"><br/><p align="center" style="color:white">ANDREW MOORE</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Wilson.jpg" alt="Richard"><br/><p align="center" style="color:white">RICHARD WILSON</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Jimmy.jpg" alt="James"><br/><p align="center" style="color:white">JAMES WASS</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Wes 2.jpg" alt="Wes"><br/><p align="center" style="color:white">ANDREW TOWLER</p></a></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Moorsey.jpg" alt="Andy">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:7<br>Sociability:8<br>Flexibility:6<br>Reliability:6<br>Durability:7</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">ANDREW MOORE</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Wilson.jpg" alt="Richard">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:3<br>Sociability:8<br>Flexibility:4<br>Reliability:4<br>Durability:7</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">RICHARD WILSON</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Jimmy.jpg" alt="James">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:6<br>Sociability:6<br>Flexibility:7<br>Reliability:5<br>Durability:10</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">JAMES WASS</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Wes 2.jpg" alt="Wes">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:3<br>Sociability:8<br>Flexibility:8<br>Reliability:9<br>Durability:8</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">ANDREW TOWLER</p></td>
                         </tr>
                         </tbody>
                         <br>
                         <tbody>
                         <tr>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Fin.png" alt="Finley"><br/><p align="center" style="color:white">FINLEY THOMPSON</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Elliot.jpg" alt="Elliot"><br/><p align="center" style="color:white">ELLIOT SAUNDERS</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Alex.png" alt="Alex"><br/><p align="center" style="color:white">ALEX OYSTON</p></a></td>
-                            <td><img class="circular--square" width="300" height="260" src="Images/Tom.png" alt="Tom"><br/><p align="center" style="color:white">TOM</p></a></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Fin.png" alt="Finley">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:7<br>Sociability:7<br>Flexibility:7<br>Reliability:7<br>Durability:9</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">FINLEY THOMPSON</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Elliot.jpg" alt="Elliot">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:6<br>Sociability:6<br>Flexibility:6<br>Reliability:6<br>Durability:6</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">ELLIOT SAUNDERS</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Alex.png" alt="Alex">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:5<br>Sociability:8<br>Flexibility:9<br>Reliability:7<br>Durability:7</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">ALEX OYSTON</p></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/Tom.png" alt="Tom">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:2<br>Sociability:4<br>Flexibility:8<br>Reliability:7<br>Durability:4</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact;">TOM</p></td>
                         </tr>
                         </tbody>
                     </table>
@@ -210,7 +263,11 @@
                         <tbody>
                     
                         <tr>
-                            <td><img class="circular--square" width="300" height="260" src="Images/candamir.jpg" alt="Candamir"><br/><p align="center" style="color:white">CANDAMIR</p></a></td>
+                            <td><div class="tooltip"><img class="circular--square" width="300" height="260" src="Images/candamir.jpg" alt="Candamir">
+                                <span class="tooltiptext">ATTRIBUTES:<br><br>Chatability:9<br>Sociability:5<br>Flexibility:8<br>Reliability:10<br>Durability:10</span>
+                                <span class="tooltipbio">The seediest of seedy dwarves, Jonny (or Bob Boomstrom to his adoring backroom staff)</span></div>
+                                <br/><p align="center" style="color:white;font-family:impact">CANDAMIR</p></a></td>
+                        
                         </tr>
                         </tbody>
                     </table>
